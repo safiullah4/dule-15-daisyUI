@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component library for tailwind css</title>
+    <!-- daisy cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- componant like of navbae/button amra copy kore use korte pari and tailwind diye abar shegula use korte pari -->
+    <!-- Don't use legacy component because they are going to remove these components -->
+    <!-- already responsive ata niye r tension kora lagbe na -->
+    <!-- nav footer table jai laguk akjhan theke niye use kora jay -->
+
+    <!-- button integreted -->
+    <button class="btn glass">Glass button</button>
+    <button class="btn">Click me</button>
+    <button class="btn btn-warning">My goodness</button>
+
+    <!-- modal button = if you click on it popup shows-->
+
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box">
+        <h3 class="text-lg font-bold">Hello!</h3>
+        <p class="py-4">
+          Press ESC key or click the SAFI button below to close
+        </p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- theme controler -->
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">Default</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="default"
+        />
+      </label>
+    </div>
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">Retro</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="retro"
+        />
+      </label>
+    </div>
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">Cyberpunk</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="cyberpunk"
+        />
+      </label>
+    </div>
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">Valentine</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="valentine"
+        />
+      </label>
+    </div>
+    <div class="form-control">
+      <label class="label cursor-pointer gap-4">
+        <span class="label-text">Aqua</span>
+        <input
+          type="radio"
+          name="theme-radios"
+          class="radio theme-controller"
+          value="aqua"
+        />
+      </label>
+    </div>
+
+    <!-- accordian= vibinno website e frequitly questions ask korle shegula akta jaygay likha thake aktay click kore oita dekhay abar onno ta close hoy arokom -->
+    <div class="collapse bg-base-200">
+      <input type="radio" name="my-accordion-1" checked="checked" />
+      <div class="collapse-title text-xl font-medium">
+        What isthe best ai facility
+      </div>
+      <div class="collapse-content">
+        <p>Open Ai</p>
+      </div>
+    </div>
+    <div class="collapse bg-base-200">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title text-xl font-medium">
+        What is the best free ai facility
+      </div>
+      <div class="collapse-content">
+        <p>Deepseek</p>
+      </div>
+    </div>
+    <div class="collapse bg-base-200">
+      <input type="radio" name="my-accordion-1" />
+      <div class="collapse-title text-xl font-medium">
+        What is the ai a bangladeshi was involed in
+      </div>
+      <div class="collapse-content">
+        <p>Gimini</p>
+      </div>
+    </div>
+
+    <!-- card copy -->
+    <div class="card bg-base-100 w-96 shadow-xl">
+      <figure>
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+          alt="Shoes"
+        />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Shoes!</h2>
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- carousal= background e image slide show kora jay upore niche jeta korbo choose kore kora jay akhsan theke -->
+    <!-- chat bubble chat er moto interface -->
+    <!-- countdown ace -->
+    <!-- diff tene blur color komano barano jay -->
+    <!-- keyborad er shortcut er ui acedaiui component er kbd section e -->
+    <!-- stats and table -->
+    <!-- timeline ace product tracking e je bar dekhay oita -->
+    <!-- navbar -->
+  </body>
+</html>
