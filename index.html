@@ -10,6 +10,10 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/5e139b036d.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       tailwind.config = {
         theme: {
@@ -25,7 +29,7 @@
   </head>
   <body>
     <!-- header section -->
-    <header class="mx-auto container">
+    <header class="mx-auto container mb-[120px]">
       <nav>
         <div class="navbar bg-base-100">
           <!-- navbar-start er class er shate porichito na tai inspect kore dekhbo agula ki kore -->
@@ -95,7 +99,7 @@
               <button class="btn bg-bike-primary">Purchase</button>
             </div>
             <!-- image c -->
-            <div class="flex-1">
+            <div class="flex-1 relative top-[-45px] left-[30px] ">
               <img class="w-[440px]" src="images/slider/bike1.png" alt="" />
             </div>
           </div>
@@ -124,7 +128,7 @@
               <button class="btn bg-bike-primary">Purchase</button>
             </div>
             <!-- image c -->
-            <div class="flex-1">
+            <div class="flex-1 relative top-[-45px] left-[30px] ">
               <img class="w-[440px]" src="images/slider/bike2.png" alt="" />
             </div>
           </div>
@@ -154,7 +158,7 @@
               <button class="btn bg-bike-primary">Purchase</button>
             </div>
             <!-- image c -->
-            <div class="flex-1">
+            <div class="flex-1 relative top-[-45px] left-[30px] ">
               <img class="w-[440px]" src="images/slider/bike3.png" alt="" />
             </div>
           </div>
@@ -168,11 +172,12 @@
         </div>
       </div>
 
+    </header>
+
+    <main class="container mx-auto my-24 ">
+
       <!--Featured bike section  -->
-
-      <!-- Latest News -->
-
-      <section class="container mx-auto">
+      <section class="container mx-auto my-24 ">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold mt-[169px]">
             Fetured Bikes In This Year
@@ -180,12 +185,12 @@
           <p class="text-red-600 text-sm">Best bike collection</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3">
+        <div class="grid grid-cols-1 lg:grid-cols-3 ">
           <!-- first card -->
           <div>
-            <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card bg-base-100 w-96 shadow-xl mx-auto my-7 ">
               <figure>
-                <img src="images/others/latest1.png" />
+                <img class="w-[90%]" src="images/others/latest1.png" />
               </figure>
               <div class="card-body">
                 <h2 class="card-title">Ducati XDIAVEL S-73</h2>
@@ -194,14 +199,18 @@
                   Lacus, fermentum amet faucibus sed id nisi lectus at.
                 </p>
                 <div class="card-actions w-[161px] justify-start mt-6">
-                  <button class="w-full btn bg-bike-primary hover:bg-white hover:text-bike-primary">Buy Now</button>
+                  <button
+                    class="w-full btn bg-bike-primary hover:bg-white hover:text-bike-primary"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <!-- second card -->
           <div>
-            <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card bg-base-100 w-96 shadow-xl mx-auto my-7 ">
               <figure>
                 <img src="images/others/latest2.png" />
               </figure>
@@ -212,15 +221,19 @@
                   Lacus, fermentum amet faucibus sed id nisi lectus at.
                 </p>
                 <div class="card-actions w-[161px] justify-start mt-6">
-                    <!-- btn-outline niye button and text er customize color use kora jay -->
-                  <button class="w-full btn btn-outline border-bike-primary text-bike-primary hover:bg-bike-primary hover:border-none">Buy Now</button>
+                  <!-- btn-outline niye button and text er customize color use kora jay -->
+                  <button
+                    class="w-full btn btn-outline border-bike-primary text-bike-primary hover:bg-bike-primary hover:border-none"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <!-- third card -->
           <div>
-            <div class="card bg-base-100 w-96 shadow-xl">
+            <div class="card bg-base-100 w-96 shadow-xl mx-auto my-7 ">
               <figure>
                 <img src="images/others/latest3.png" />
               </figure>
@@ -231,15 +244,114 @@
                   Lacus, fermentum amet faucibus sed id nisi lectus at.
                 </p>
                 <div class="card-actions w-[161px] justify-start mt-6">
-                  <button class="w-full btn btn-outline border-bike-primary text-bike-primary hover:bg-bike-primary hover:border-none">Buy Now</button>
+                  <button
+                    class="w-full btn btn-outline border-bike-primary text-bike-primary hover:bg-bike-primary hover:border-none"
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </header>
 
-    <main class="container mx-auto"></main>
+      <!-- clent section -->
+      <section>
+        <h2 class="text-7xl lg:text-[48px] text-center mb-[52px]">
+          Happy <span class="text-bike-primary">Clients says</span>
+        </h2>
+
+        <!-- card container -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 ">
+          <!-- card 1 -->
+          <div
+          class="w-[322px] h-[495px] bg-base-100 shadow-xl space-y-7 pt-12 pb-12 mx-auto my-7 "
+        >
+          <div class="avatar w-full">
+            <div class="w-[149px] h-[149px] rounded-full mx-auto">
+              <img src="images/others/user-1.png" class="text-center" />
+            </div>
+          </div>
+          <div
+            class="w-[253px] flex flex-col justify-center items-center mx-auto space-y-4"
+          >
+            <p class="text-center">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <!-- for review icons -->
+            <div>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-regular fa-star"></i>
+            </div>
+            <p class="text-bike-primary">Regina Miles</p>
+            <p class="font-bold">Banker</p>
+          </div>
+        </div>
+
+          <!-- card 2 -->
+          <div
+          class="w-[322px] h-[495px] bg-base-100 shadow-xl space-y-7 pt-12 pb-12 mx-auto my-7 "
+        >
+          <div class="avatar w-full">
+            <div class="w-[149px] h-[149px] rounded-full mx-auto">
+              <img src="images/others/user-1.png" class="text-center" />
+            </div>
+          </div>
+          <div
+            class="w-[253px] flex flex-col justify-center items-center mx-auto space-y-4"
+          >
+            <p class="text-center">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <!-- for review icons -->
+            <div>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-regular fa-star"></i>
+            </div>
+            <p class="text-bike-primary">Regina Miles</p>
+            <p class="font-bold">Banker</p>
+          </div>
+        </div>
+          <!-- card 3 -->
+          <div
+          class="w-[322px] h-[495px] bg-base-100 shadow-xl space-y-7 pt-12 pb-12 mx-auto my-7 "
+        >
+          <div class="avatar w-full">
+            <div class="w-[149px] h-[149px] rounded-full mx-auto">
+              <img src="images/others/user-1.png" class="text-center" />
+            </div>
+          </div>
+          <div
+            class="w-[253px] flex flex-col justify-center items-center mx-auto space-y-4"
+          >
+            <p class="text-center">
+              Slate helps you see how many more days you need to work to reach
+              your financial goal for the month and year.
+            </p>
+            <!-- for review icons -->
+            <div>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-solid fa-star"></i>
+              <i class="text-bike-primary fa-regular fa-star"></i>
+            </div>
+            <p class="text-bike-primary">Regina Miles</p>
+            <p class="font-bold">Banker</p>
+          </div>
+        </div>
+
+        </div>
+      </section>
+    </main>
   </body>
 </html>
